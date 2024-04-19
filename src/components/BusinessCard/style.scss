@@ -1,0 +1,87 @@
+@use "../../constants/colors" as vColors;
+@import "../../constants/typography";
+
+.BusinessCard__wrapper {
+    font-family: "Copperplate 8";
+    border-radius: .1em;
+    background-color: vColors.$cardBackground;
+    background-image: url("/assets/images/texture5.png");
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    width: 25vw;
+    aspect-ratio: 16 / 9;
+    color: vColors.$black;
+
+    .BusinessCard__container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .top {
+            font-family: "Copperplate 7";
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1em;
+            .tel {
+                font-size: .75em;
+            }
+            div{
+                text-align: center;
+                .link {
+                    cursor: pointer;
+                    font-size: .75em;
+                    margin: 0;
+                }
+            }
+        }
+
+        .mid {
+            
+            flex: 3;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .name {
+                    font-size: 1em;
+                    margin: 0;
+                    padding: 0;
+
+                    span {
+                        text-transform: uppercase;
+                    }
+                }
+
+                .role {
+                    margin: 0;
+                    font-size: .75em;
+                }
+            }
+        }
+
+        .bottom {
+            font-family: "Copperplate 7";
+            flex: 1;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            .address {
+                font-size: .75em;
+                span{
+                    cursor: pointer;
+                    font-family: "Copperplate";
+                }
+            }
+        }
+    }
+}
