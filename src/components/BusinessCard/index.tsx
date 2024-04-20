@@ -1,9 +1,11 @@
 import React from 'react';
 import './style.scss';
+import { Tilt } from '@jdion/tilt-react';
+
 
 const BusinessCard = (): React.JSX.Element => {
     return (
-        <div className='BusinessCard__wrapper'>
+        <Tilt className='BusinessCard__wrapper'>
             <div className='BusinessCard__container'>
                 <div className='top'>
                     <p className='tel'>+351 932 209 245</p>
@@ -22,7 +24,7 @@ const BusinessCard = (): React.JSX.Element => {
                     <p className='address'>Lisboa, Portugal 2024™️ - pteutoscano@gmail.com<br/> <span>to see more ...</span></p>
                 </div>
             </div>
-        </div>
+        </Tilt>
     )
 }
 

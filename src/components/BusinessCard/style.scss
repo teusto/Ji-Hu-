@@ -7,7 +7,9 @@
     background-color: vColors.$cardBackground;
     background-image: url("/assets/images/texture5.png");
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-    width: 25vw;
+    width: 28vw;
+    position: absolute;
+    z-index: 10;
     aspect-ratio: 16 / 9;
     color: vColors.$black;
 
