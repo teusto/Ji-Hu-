@@ -1,0 +1,35 @@
+@use "../../constants/colors" as vColors;
+@import "../../constants/typography";
+
+.Loader__wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 11;
+    .Loader__top{
+        background-color: vColors.$black;
+        width: 100vw;
+        height: 50%;
+        .__top__text{
+            height: 100%;
+            width: auto;
+            padding: 2em 3em;
+            .__text__sentence{
+                display: flex;
+                .--text{
+                    color: white;
+                    font-size: 2em;
+                    font-family: 'Copperplate 7';
+                    // border: 1px solid red;
+                    margin: 0;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    .Loader__bottom{
+        background-color: vColors.$black;
+        width: 100vw;
+        height: 50%;
+    }
+}
